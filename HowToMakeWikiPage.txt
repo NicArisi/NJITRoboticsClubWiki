@@ -1,0 +1,9 @@
+1. Copy and paste the StudentExample.html file
+2. Rename the file
+3. If you are using any images, create a new file in the folder called images, create a new file with the same name as your html 
+4. Open the html file and follow the comments to add your content
+5. Once complete with your html, go to the html topic you marked as active
+<h1>PROJECTS|IDEAS|CIRCUITS|FINDINGS|HOW-TO'S</h1>
+<a style="color: blue;" href="#egg">HOME</a>
+6. In the code above in the html file, copy and paste below it and name HOME to the name of your wiki and href= should be equal to the name of your html file followed by .html
+
