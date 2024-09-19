@@ -1,0 +1,40 @@
+<html>
+<head>
+<link rel="stylesheet" href="InertiaCalcCSS.css">
+<script src="inertiaJS.JS"></script>
+</head>
+<body>
+
+<div class="InertiaCalc" >
+  <input type="text" class="calculator-screen" value="" disabled />
+  <p>Input all your neccesary data in the base scientific units about your object to get the inertia. Click on object type to output data</p>
+  
+    <form>
+      
+      <label for="Mass">Mass</label>
+      <input type="text" id="Mass" name="Mass"><br><br>
+      
+      <label for="Radius">Radius</label>
+      <input type="text" id="Radius" name="Radius"><br><br>
+      
+      <label for="Length">Length</label>
+      <input type="text" id="Length" name="Length"><br><br>
+      
+      <label for="CMInertia">Center of mass inertia</label>
+      <input type="text" id="CMInertia" name="CMInertia"><br><br>
+      <div class="InertiaType" >
+        <input type="button" class = "objectType" value="Solid Cylinder" onclick="processInputs(); calculate('Solid Cylinder'); updateDisplay()">
+        <input type="button" class = "objectType" value="Hoop" onclick="processInputs(); calculate('Hoop'); updateDisplay()">
+        <input type="button" class = "objectType" value="Solid Sphere" onclick="processInputs(); calculate('Solid Sphere'); updateDisplay()">
+        <input type="button" class = "objectType" value="Rod about center of mass" onclick="processInputs(); calculate('Rod about center of mass'); updateDisplay()">
+        <input type="button" class = "objectType" value="Solid cylinder about central diameter" onclick="processInputs(); calculate('SolidCylinderAboutCentralDia'); updateDisplay()">
+        <input type="button" class = "objectType" value="Hoop about diameter" onclick="processInputs(); calculate('HoopAboutDiameter'); updateDisplay()">
+        <input type="button" class = "objectType" value="Thin spherical shell" onclick="processInputs(); calculate('ThinSphericalShell'); updateDisplay()">
+        <input type="button" class = "objectType" value="Rod about end" onclick="processInputs(); calculate('RodAboutEnd'); updateDisplay()">
+        <input type="button" class = "objectType" value="Parallel Axis Theorom" onclick="processInputs(); calculate('ParallelAxisTheorom');updateDisplay()">
+        <input type="reset" class = "objectType" value="All clear" onclick="resetCalculator(); updateDisplay() ">
+      </div>
+    </form>
+</div>
+</body>
+</html>
